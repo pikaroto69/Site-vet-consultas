@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Define o conjunto de caracteres como UTF-8 para suportar caracteres especiais -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a escala inicial e a largura da visualização para dispositivos móveis -->
+    <title>Adicionar Consulta</title> <!-- Define o título da página -->
+    <link rel="stylesheet" href="static/estiloag.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="static/img/DOG.png">
+        <div class="cabecalho">
+            <a class="botcabecalho" href="https://google.com"><bottom>Inicio</bottom></a>
+            <a class="botcabecalho" href="https://google.com"><bottom>Serviços</bottom></a>
+            <a class="botcabecalho" href="https://google.com"><bottom>Contato</bottom></a>
+            <a class="botcabecalho" href="https://google.com"><bottom>Sobre Nós</bottom></a>
+        </div>
+</header>
+<br>
+    <h1 class="add">Adicionar Consulta</h1> <!-- Título principal da página -->
+    <form action="/adicionar_contato" method="POST"><br> <!-- Formulário para adicionar um novo contato. O 'action' indica para onde os dados do formulário serão enviados e o 'method' indica o método HTTP usado (neste caso, POST) -->
+        <div class="consulta">
+            <label for="nome">Nome:</label><br> <!-- Rótulo e campo de entrada para o nome do contato -->
+            <input type="text" id="nome" name="nome"><br><br> <!-- Campo de entrada para o nome do contato -->
+            <label for="animal">Nome do Animal:</label><br> <!-- Rótulo e campo de entrada para o telefone do contato -->
+            <input type="text" id="animal" name="animal"><br><br> <!-- Campo de entrada para o telefone do contato -->
+            <label for="data">Data:</label><br> <!-- Rótulo e campo de entrada para o email do contato -->
+            <input type="datetime-local" id="data" name="data"><br><br> <!-- Campo de entrada para o email do contato -->
+            <label for="sintoma">Sintomas:</label><br> <!-- Rótulo e campo de entrada para o nome do contato -->
+            <input type="text" id="sintoma" name="sintoma"><br><br>
+            <input type="submit" value="Adicionar"><br> <!-- Botão de envio do formulário -->
+        </div>
+    </form>
+    <footer>
+        <p>&copy; 2023 - Todos os direitos reservados</p>
+        <nav>
+            <ul>
+                <li><a href="#">Termos de uso</a></li>
+                <li><a href="#">Política de privacidade</a></li>
+                <li><a href="#">Sobre nós</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </footer>
+    <br>
+</body>
+</html>

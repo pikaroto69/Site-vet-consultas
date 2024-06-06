@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --cprincipal: #058789;
+    --csecundaria: #0a6869;
+    --cletra: azure;
+    --introdução: rgb(38, 137, 146);
+}
+body{
+    background-color: beige;
+}
+
+header{
+    text-align: center;
+    background: #fdeb49;    
+}
+
+
+.cabecalho{
+    background-color:#988d2a;
+    padding: 15px;
+   
+}
+.botcabecalho{
+    background-color: #988d2a;
+    color:black;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 0px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.botcabecalho:hover{
+    background-color: #fdeb49;
+    border-radius: 30px;
+    font-weight: bolder;
+}
+.logo{
+    width: 120px;
+}
+
+/* Index */
+.tituloag{
+    text-align: center;
+    /* background-color: rgb(198, 143, 76); */
+    padding: 5px;
+}
+.marcar{
+    background-color: rgb(215, 175, 73);
+    text-align: center;
+    display:block;
+    padding:20px;
+    margin-left: 450px;
+    margin-right:450px;
+    font-size: xx-large;
+    font-weight: bold;
+    border-radius: 10px;
+
+}
+.marcar:hover{
+    font-size: xx-large;
+    font-weight: bolder;
+    background-color: rgb(174, 142, 61);
+}
+.marcado{
+    background-color:#dac948f8 ;
+    padding:30px;
+    margin:0;
+    font-size: 15px;
+    font-weight: bold;
+}
+.apagar{
+    background-color: #988d2a;
+    padding: 5px;
+    border-radius: 5px;
+}
+/* fim index */
+
+/* Adicionar */
+.add{
+    text-align: center;
+
+}
+.consulta{
+    text-align: center;
+    display:block;
+    background-color: rgb(174, 142, 61);
+    margin-left: 400px;
+    margin-right: 400px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-radius: 20px;
+}
+/* Fim adicionar */
+
+
+footer {
+    background-color: #fdeb49;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+    margin-top: 150px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
