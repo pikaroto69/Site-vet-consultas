@@ -7,10 +7,21 @@
     <list default="true" id="c1e38d0c-0ebc-4387-9cc3-d14bcf042ac2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/estiloag.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/estiloag.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/adicionar_contato.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/editar_contato.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/estelo.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/estelo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/estilo.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/estilo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/estilus.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/estilus.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/style2.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/style2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/adicionar_consulta.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/adicionar_consulta.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/adicionar_paciente.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/adicionar_paciente.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/calcular_idade_humana.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/calcular_idade_humana.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/consultas.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/consultas.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/editar_consulta.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/editar_consulta.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/editar_paciente.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/editar_paciente.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/inde.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/inde.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/indez.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/indez.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/peso_medicamento.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/peso_medicamento.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
