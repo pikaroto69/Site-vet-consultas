@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Define o conjunto de caracteres como UTF-8 para suportar caracteres especiais -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a escala inicial e a largura da visualização para dispositivos móveis -->
+    <title>Lista de Contatos</title> <!-- Define o título da página -->
+    <link rel="stylesheet" href="static/estiloag.css">
+</head>
+<body>
+    <header>
+            <img class="logo" src="static/img/DOG.png">
+            <div class="cabecalho">
+                <a class="botcabecalho" href="/"><bottom>Inicio</bottom></a>
+                <a class="botcabecalho" href="/"><bottom>Agendar Consulta</bottom></a>
+                <a class="botcabecalho" href="/indez"><bottom>Perfil do Usuario</bottom></a>
+                <a class="botcabecalho" href="/inde"><bottom>Calculos Medicinais</bottom></a>
+                <a class="botcabecalho" href="/mostrar_calcular_idade"><bottom>Idade De Seu Pet</bottom></a>
+            </div>
+    </header>
+    <br><br>
+    <h1 class="tituloag">Agende Sua Consulta</h1> <!-- Título principal da página -->
+    <ul>
+        <br>
+        {% for consulta in consultas %} <!-- Loop através de cada contato na lista de contatos -->
+        <li class="marcado">- Nome: {{ consulta[1] }}<br> - Nome do animal: {{ consulta[2] }}<br> - Data:  {{ consulta[3] }}<br> - Sintomas: {{  consulta[4] }}<!-- Exibe as informações do contato, incluindo o nome, número de telefone e email. Se for favorito, adiciona um marcador -->
+            <ul>
+                <br>
+                <!-- <li><a href="/editar_consulta/{{ loop.index0 }}">Editar</a></li>  Link para editar o contato -->
+                <li><a href="/apagar_consulta/{{ loop.index0 }}" class="apagar">Apagar</a></li> <!-- Link para apagar o contato -->
+            </ul>
+        </li>
+        {% endfor %}
+    </ul>
+    <br><br>
+    <a href="/adicionar_consulta" class="marcar"><botom>Marcar Consulta</botom></a> <!-- Link para adicionar um novo contato -->
+    <br>
+    <footer>
+        <p>&copy; 2024 - Todos os direitos reservados</p>
+        <nav>
+            <ul>
+                <li><a href="#">Termos de uso</a></li>
+                <li><a href="#">Política de privacidade</a></li>
+                <li><a href="#">Sobre nós</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

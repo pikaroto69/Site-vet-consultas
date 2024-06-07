@@ -90,8 +90,8 @@ header{
     text-align: center;
     display:block;
     background-color: rgb(174, 142, 61);
-    margin-left: 400px;
-    margin-right: 400px;
+    margin-left: 300px;
+    margin-right: 300px;
     padding-bottom: 10px;
     padding-top: 10px;
     border-radius: 20px;
@@ -121,4 +121,65 @@ li {
 a {
     color: #000000;
     text-decoration: none;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilos para telas menores ou iguais a 1024px */
+@media (max-width: 1024px) {
+    .botcabecalho {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .marcar{
+        font-size: large;
+    }
+}
+
+/* Estilos para telas menores ou iguais a 768px */
+@media (max-width: 768px) {
+    .logo {
+        width: 80px;
+    }
+    .marcar {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .botcabecalho{
+        padding-left: 0px;
+    }
+}
+
+/* Estilos para telas menores ou iguais a 425px */
+@media (max-width: 426px) {
+    header {
+        text-align: left;
+    }
+    .botcabecalho{
+        font-size: xx-small;
+    }
+    .consulta{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+/* Estilos para telas menores ou iguais a 375px */
+@media (max-width: 375px) {
+    header {
+        text-align: center;
+    }
+}
+
+/* Estilos para telas menores ou iguais a 320px */
+@media (max-width: 320px) {
+    header {
+        text-align: left;
+    }
 }

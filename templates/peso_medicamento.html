@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora de Dose de Medicamento</title>
+    <link rel="stylesheet" href="../static/style2.css">
+</head>
+<header>
+    <img class="logo" src="../static/img/DOG.png">
+    <div class="cabecalho">
+        <a class="botcabecalho" href="/indes"><bottom>Inicio</bottom></a>
+        <a class="botcabecalho" href="/"><bottom>Agendar Consulta</bottom></a>
+        <a class="botcabecalho" href="/indez"><bottom>Perfil do Usuario</bottom></a>
+        <a class="botcabecalho" href="/inde"><bottom>Calculos Medicinais</bottom></a>
+        <a class="botcabecalho" href="/mostrar_calcular_idade"><bottom>Idade De Seu Pet</bottom></a>
+    </div>
+</header>
+<body>
+    <h1>Calculadora de Dose de Medicamento</h1>
+    <form method="POST" action="/calcular_dose_medicamento">
+        <label for="peso_animal">Peso do Animal (kg):</label>
+        <input type="number" id="peso_animal" name="peso_animal" required><br><br>
+
+        <label for="dose_recomendada">Dose Recomendada (mg/kg):</label>
+        <input type="number" id="dose_recomendada" name="dose_recomendada" required><br><br>
+
+        <input type="submit" value="Calcular Dose">
+    </form>
+
+    {% if dose %}
+    <h2>Dose a ser administrada: {{ dose }} mg</h2>
+    {% endif %}
+</body>
+<footer>
+    <p>&copy; 2023 - Todos os direitos reservados</p>
+    <nav>
+        <ul>
+            <li><a href="#">Termos de uso</a></li>
+            <li><a href="#">Política de privacidade</a></li>
+            <li><a href="#">Sobre nós</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+</footer>
+</html>
+

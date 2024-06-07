@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular Idade Humana do Animal</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<header>
+    <img class="logo" src="../static/img/DOG.png">
+    <div class="cabecalho">
+        <a class="botcabecalho" href="/indes"><bottom>Inicio</bottom></a>
+        <a class="botcabecalho" href="/"><bottom>Agendar Consulta</bottom></a>
+        <a class="botcabecalho" href="/indez"><bottom>Perfil do Usuario</bottom></a>
+        <a class="botcabecalho" href="/inde"><bottom>Calculos Medicinais</bottom></a>
+        <a class="botcabecalho" href="/mostrar_calcular_idade"><bottom>Idade De Seu Pet</bottom></a>
+    </div>
+</header>
+<body >
+</br>
+    <h1>CALCULAR IDADE HUMANA DO ANIMAL</h1>
+</br>
+    <div>
+        <form action="/calcular_idade_humana" method="POST">
+            <label for="especie">Espécie do Animal:</label><br>
+            <input type="text" id="especie" name="especie"><br>
+            <label for="idade_animal">Idade do Animal:</label><br>
+            <input type="number" id="idade_animal" name="idade_animal"><br><br>
+            <input type="submit" value="Calcular Idade Humana">
+        </form>
+    </div>
+    <br><br>
+    <div class="centralizar resultadoo" id="idade">
+        {% if idade %} <!-- Verifica se há um resultado a ser exibido -->
+            {{ idade }} <!-- Exibe o resultado da verificação (par ou ímpar) -->
+        {% endif %}
+    </div>
+</body>
+<footer>
+	<p>&copy; 2024 - Todos os direitos reservados</p>
+	<nav>
+		<ul>
+			<li><a href="#">Termos de uso</a></li>
+			<li><a href="#">Política de privacidade</a></li>
+			<li><a href="#">Sobre nós</a></li>
+			<li><a href="#">Contato</a></li>
+		</ul>
+	</nav>
+</footer>
+</html>

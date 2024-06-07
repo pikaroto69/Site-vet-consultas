@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lais</title>
+    <link rel="stylesheet" href="static/estilo.css"> 
+    <link rel="icon" type="image/jpg" href="static/img/gog.jpg">
+</head>
+<body>
+    <header>
+        <img class="logo" src="static/img/DOG.png">
+        <div class="cabecalho">
+            <a class="botcabecalho" href="/indes"><bottom>Inicio</bottom></a>
+            <a class="botcabecalho" href="/"><bottom>Agendar Consulta</bottom></a>
+            <a class="botcabecalho" href="/indez"><bottom>Perfil do Usuario</bottom></a>
+                <a class="botcabecalho" href="/peso_medicamento">Calculos Medicinais</a>
+                <a class="botcabecalho" href="/calcular_idade_humana">Idade De Seu Pet</a>
+        </div>
+</header>
+    
+    <div class="quantidade">
+        <h1>Calcular quantidade de mililitros de soro</h1>
+        <form method="POST">
+            <div class="pesos">
+                <label for="grau">Grau de Desidratação:</label>
+                <select name="grau" id="grau" required>
+                    <option value="leve">Leve</option>
+                    <option value="moderada">Moderada</option>
+                    <option value="grave">Grave</option>
+                </select>
+            </div>
+            <div class="pesos">
+                <label for="peso">Peso do Animal (kg):</label>
+                <input type="number" id="peso" name="peso" step="0.01" required>
+            </div>
+            <button type="submit">Calcular</button>
+        </form>
+            <h2>Volume para ser ministrado: <span class="resultado">{{ volume }} mL</span></h2>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 - Todos os direitos reservados</p>
+        <nav>
+            <ul>
+                <li><a href="#">Termos de uso</a></li>
+                <li><a href="#">Política de privacidade</a></li>
+                <li><a href="#">Sobre nós</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Define o conjunto de caracteres como UTF-8 para suportar caracteres especiais -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a escala inicial e a largura da visualização para dispositivos móveis -->
+    <title>Editar Paciente</title> <!-- Define o título da página -->
+    <link rel="stylesheet" href="../static/estilus.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="../static/img/DOG.png">
+        <div class="cabecalho">
+            <a class="botcabecalho" href="/indes"><bottom>Inicio</bottom></a>
+            <a class="botcabecalho" href="/"><bottom>Agendar Consulta</bottom></a>
+            <a class="botcabecalho" href="/indez"><bottom>Perfil do Usuario</bottom></a>
+            <a class="botcabecalho" href="/inde"><bottom>Calculos Medicinais</bottom></a>
+            <a class="botcabecalho" href="/mostrar_calcular_idade"><bottom>Idade De Seu Pet</bottom></a>
+        </div>
+</header>
+    <h1>Editar Paciente</h1> <!-- Título principal da página -->
+    <form class="editar" action="/editar_paciente/{{ paciente[0] }}" method="POST"> <!-- Formulário para editar um contato. O 'action' indica para onde os dados do formulário serão enviados e o 'method' indica o método HTTP usado (neste caso, POST) -->
+        <label for="nome">Nome:</label><br> <!-- Rótulo e campo de entrada para o nome do contato -->
+        <input type="text" id="nome" name="nome" value="{{ paciente[1] }}"><br> <!-- Campo de entrada para o nome do contato, com o valor pré-definido preenchido com o nome atual do contato -->
+        <label for="telefone">Telefone:</label><br> <!-- Rótulo e campo de entrada para o telefone do contato -->
+        <input type="text" id="telefone" name="telefone" value="{{ paciente[2] }}"><br> <!-- Campo de entrada para o telefone do contato, com o valor pré-definido preenchido com o número atual do contato -->
+        <label for="raca">Raça:</label><br> <!-- Rótulo e campo de entrada para o email do contato -->
+        <input type="text" id="raca" name="raca" value="{{ paciente[3] }}"><br> <!-- Campo de entrada para o email do contato, com o valor pré-definido preenchido com o email atual do contato -->
+        <label for="peso">Peso:</label><br> <!-- Rótulo e campo de entrada para o email do contato -->
+        <input type="text" id="peso" name="peso" value="{{ paciente[4] }}"><br>
+        <label for="nometutor">Nome do Tutor:</label><br> <!-- Rótulo e campo de entrada para o email do contato -->
+        <input type="text" id="nometutor" name="nometutor" value="{{ paciente[5] }}"><br>
+        <label for="especie">Espécie:</label><br> <!-- Rótulo e campo de entrada para o email do contato -->
+        <input type="text" id="especie" name="especie" value="{{ paciente[6] }}"><br>
+        <br>
+        <input type="submit" value="Salvar"> <!-- Botão de envio do formulário -->
+    </form>
+    <footer>
+        <p>&copy; 2023 - Todos os direitos reservados</p>
+        <nav>
+            <ul>
+                <li><a href="#">Termos de uso</a></li>
+                <li><a href="#">Política de privacidade</a></li>
+                <li><a href="#">Sobre nós</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

@@ -10,22 +10,23 @@
     <header>
             <img class="logo" src="http://127.0.0.1:5000/static/img/DOG.png">
             <div class="cabecalho">
-                <a class="botcabecalho" href="https://google.com"><bottom>Inicio</bottom></a>
-                 <a class="botcabecalho" href="https://google.com"><bottom>Serviços</bottom></a>
-                 <a class="botcabecalho" href="https://google.com"><bottom>Contato</bottom></a>
-                 <a class="botcabecalho" href="https://google.com"><bottom>Sobre Nós</bottom></a>
+                <a class="botcabecalho" href="/indes"><bottom>Inicio</bottom></a>
+                <a class="botcabecalho" href="/"><bottom>Agendar Consulta</bottom></a>
+                <a class="botcabecalho" href="/indez"><bottom>Perfil do Usuario</bottom></a>
+                <a class="botcabecalho" href="/inde"><bottom>Calculos Medicinais</bottom></a>
+                <a class="botcabecalho" href="/mostrar_calcular_idade"><bottom>Idade De Seu Pet</bottom></a>
             </div>
     </header>
     <h1>Editar Consulta</h1> <!-- Título principal da página -->
-    <form action="/editar_contato/{{ contato[0] }}" method="POST"> <!-- Formulário para editar um contato. O 'action' indica para onde os dados do formulário serão enviados e o 'method' indica o método HTTP usado (neste caso, POST) -->
+    <form action="/editar_consulta/{{ consulta[0] }}" method="POST"> <!-- Formulário para editar um contato. O 'action' indica para onde os dados do formulário serão enviados e o 'method' indica o método HTTP usado (neste caso, POST) -->
         <label for="nome">Nome:</label><br> <!-- Rótulo e campo de entrada para o nome do contato -->
-        <input type="text" id="nome" name="nome" value="{{ contato[1] }}"><br> <!-- Campo de entrada para o nome do contato, com o valor pré-definido preenchido com o nome atual do contato -->
+        <input type="text" id="nome" name="nome" value="{{ consulta[1] }}"><br> <!-- Campo de entrada para o nome do contato, com o valor pré-definido preenchido com o nome atual do contato -->
         <label for="animal">Nome Do Animal:</label><br> <!-- Rótulo e campo de entrada para o telefone do contato -->
-        <input type="text" id="animal" name="animal" value="{{ contato[2] }}"><br> <!-- Campo de entrada para o telefone do contato, com o valor pré-definido preenchido com o número atual do contato -->
+        <input type="text" id="animal" name="animal" value="{{ consulta[2] }}"><br> <!-- Campo de entrada para o telefone do contato, com o valor pré-definido preenchido com o número atual do contato -->
         <label for="data">Data:</label><br> <!-- Rótulo e campo de entrada para o email do contato -->
-        <input type="datetime-local" id="data" name="data" value="{{ contato[3] }}"><br> <!-- Campo de entrada para o email do contato, com o valor pré-definido preenchido com o email atual do contato -->
+        <input type="datetime-local" id="data" name="data" value="{{ consulta[3] }}"><br> <!-- Campo de entrada para o email do contato, com o valor pré-definido preenchido com o email atual do contato -->
         <label for="sintoma">Sintomas:</label><br> <!-- Rótulo e campo de entrada para o nome do contato -->
-        <input type="text" id="sintoma" name="sintoma" value="{{ contato[4] }}"><br>
+        <input type="text" id="sintoma" name="sintoma" value="{{ consulta[4] }}"><br>
         <input type="submit" value="Salvar"> <!-- Botão de envio do formulário -->
     </form>
     <br>
