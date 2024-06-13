@@ -20,7 +20,7 @@
     <h1>Lista de Perfis</h1> <!-- Título principal da página -->
     <ul>
         {% for paciente in pacientes %} <!-- Loop através de cada contato na lista de contatos -->
-        <li class="mercado">- {{ paciente[1] }} <br>- {{ paciente[2] }} <br>- {{ paciente[3] }} <br>- {{ paciente[4] }} <br>- {{ paciente[5] }} <br>- {{ paciente[6] }} <!-- Exibe as informações do contato, incluindo o nome, número de telefone e email. Se for favorito, adiciona um marcador -->
+        <li class="mercado">-Nome:  {{ paciente[1] }} <br>-Telefone:  {{ paciente[2] }} <br>-Raça:  {{ paciente[3] }} <br>-Peso:  {{ paciente[4] }} <br>-Tutor do Animal:  {{ paciente[5] }} <br>-Especie:  {{ paciente[6] }} <!-- Exibe as informações do contato, incluindo o nome, número de telefone e email. Se for favorito, adiciona um marcador -->
             <ul>
                 <li><a href="/editar_paciente/{{ loop.index0 }}">Editar</a></li> <!-- Link para editar o contato -->
                 <li><a href="/apagar_paciente/{{ loop.index0 }}">Apagar</a></li> <!-- Link para apagar o contato -->

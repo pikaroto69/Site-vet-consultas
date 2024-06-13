@@ -22,12 +22,12 @@ header{
 
 
 .cabecalho{
-    background-color:#988d2a;
+    background-color:#989049;
     padding: 15px;
    
 }
 .botcabecalho{
-    background-color: #988d2a;
+    background-color: #989049;
     color:black;
     padding: 10px;
     padding-left: 50px;
@@ -75,7 +75,7 @@ header{
     font-weight: bold;
 }
 .apagar{
-    background-color: #988d2a;
+    background-color: #989049;
     padding: 5px;
     border-radius: 5px;
 }

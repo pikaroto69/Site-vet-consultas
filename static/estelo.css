@@ -18,12 +18,12 @@ header{
 
 
 .cabecalho{
-    background-color:#988d2a;
+    background-color:#989049;
     padding: 15px;
    
 }
 .botcabecalho{
-    background-color: #988d2a;
+    background-color: #989049;
     color:black;
     padding: 10px;
     padding-left: 50px;
@@ -48,7 +48,7 @@ h1{
 .adicionar{
     display: block;
     text-align: center;
-    background-color: #AE8E3D;
+    background-color: #989049;
     margin-top: 50px;
     font-size: xx-large;
     margin-left: 470px;
@@ -63,15 +63,16 @@ h1{
 .mercado {
     display: block;
     margin-top: 30px;
-    background-color: #AE8E3D;
-    margin-right: 1100px;
+    background-color: #989049;
+    margin-right: 900px;
     border-radius: 20px;
     padding: 20px;
+    padding-right: 20px;
 }
 
 .adicionar_paciente{
     text-align: center;
-    background-color: #AE8E3D;
+    background-color: #989049;
     padding-bottom: 20px;
     margin-top: 10px;
     margin-left: 500px;
@@ -83,7 +84,7 @@ h1{
 .editar {
     text-align: center;
     margin-top: 20px;
-    background-color: #AE8E3D;
+    background-color: #989049;
     padding: 20px;
     margin-left: 500px;
     margin-right: 500px;

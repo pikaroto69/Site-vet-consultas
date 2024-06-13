@@ -5,12 +5,12 @@ header{
 
 
 .cabecalho{
-    background-color:#988d2a;
+    background-color:#989049;
     padding: 15px;
    
 }
 .botcabecalho{
-    background-color: #988d2a;
+    background-color: #989049;
     color:black;
     padding: 10px;
     padding-left: 50px;
@@ -72,7 +72,7 @@ select, input {
 }
 
 button {
-    background-color: #988d2a;
+    background-color: #989049;
     color: #fff;
     padding: 10px 15px;
     border: none;
