@@ -117,9 +117,19 @@ def calcular_idade_humana():
 
 @app.route('/inde', methods=['GET', 'POST'])
 def inde():
+    #deine a rota para a página inicial ('/') que aceita métodos GET e POST
+    #POST mandando algo ao servidor tipo quando você preenche e envia um formulário online.
+    #GET usado para solicitar dados do servidor.
+    # @app.route é um decorador que associa a função index a essa rota.
+
     if request.method == 'POST':
+        # verifica se o método é POST.
+
         grau = request.form['grau']
+        # pega o valor do campo 'grau' do formulário.
+
         peso = float(request.form['peso'])
+         # pega o valor do campo 'peso' e converte para float.
 
         if grau == 'leve':
             volume = 50 * peso
@@ -129,10 +139,17 @@ def inde():
             volume = 100 * peso
         else:
             volume = 0
+        # calcula o volume com base no valor de grau:
+        # se grau for 'leve', volume é 50 x peso.
+        # se grau for 'moderada', volume é 75 x peso.
+        # se grau for 'grave', volume é 100 x peso.
+        # se grau nao corresponder a nenhum desses valores, volume é definido como 0.
 
         return render_template('inde.html', volume=volume)
+         # renderiza o template 'inde.html', passando a variável volume.
 
     return render_template('inde.html', volume=0)
+    # renderiza o template 'inde.html' com volume = 0 se o método não for POST.
 
 
 #Joao pedro-Perfil
