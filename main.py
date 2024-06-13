@@ -5,16 +5,16 @@ app = Flask(__name__)
 
 
 
-#Vitor2
+#João Pedro-home
 
 @app.route('/')
 def home():
     return render_template('index.html')
 
 
-#------
+#Raul-Consultas
 
-consultas = []
+consultas = [] 
 
 @app.route('/consultass')
 def consultass():
@@ -65,7 +65,7 @@ def apagar_consulta(codigo):
     del consultas[codigo]
     return redirect('/')  # Redireciona de volta para a página inicial
 
-#Arthur 1
+#Arthur-Calcular Idade
 
 @app.route('/mostrar_calcular_idade')
 def mostrar_calcular_idade():
@@ -113,7 +113,7 @@ def calcular_idade_humana():
 
 
 
-#vitor
+#vitor-Calculadora de Soro
 
 @app.route('/inde', methods=['GET', 'POST'])
 def inde():
@@ -135,7 +135,7 @@ def inde():
     return render_template('inde.html', volume=0)
 
 
-#Joao pedro
+#Joao pedro-Perfil
 
 
 pacientes = []
@@ -191,7 +191,7 @@ def apagar_pacientes(codigo):
 
 
 
-#Arthur 2
+#Arthur-Calculadora de Medicamento
 
 @app.route('/peso_medicamento')
 def peso_medicamento():
