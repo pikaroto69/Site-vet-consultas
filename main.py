@@ -2,6 +2,18 @@ from flask import Flask, request, jsonify, render_template, request, redirect
 
 app = Flask(__name__)
 
+
+
+
+#Vitor2
+
+@app.route('/')
+def home():
+    return render_template('index.html')
+
+
+#------
+
 consultas = []
 
 @app.route('/consultass')
@@ -26,7 +38,7 @@ def adicionar_consulta():
         sintoma = request.form['sintoma']
         codigo = len(consultas)
         consultas.append([codigo, nome, animal, data, sintoma])
-        return redirect('/consultas')  # Redireciona de volta para a página inicial
+        return redirect('/consultass')  # Redireciona de volta para a página inicial
     else:
         return render_template('adicionar_consulta.html')  # Renderiza o formulário de adicionar contato
 
@@ -142,7 +154,7 @@ def adicionar_pacientes():
         especie = request.form['especie']
         telefone = request.form['telefone']
         codigo = len(pacientes)
-        pacientes.append([codigo, nome, raca, peso, nometutor, especie, telefone])
+        pacientes.append([codigo, nome, telefone, raca, peso, nometutor, especie])
         return redirect('/indez')
     else:
         return render_template('adicionar_paciente.html')
@@ -198,11 +210,6 @@ def calcular_dose_medicamento():
     return redirect('/peso_medicamento')
 
 
-#Vitor2
-
-@app.route('/')
-def home():
-    return render_template('index.html')
 
 if __name__ == '__main__':
     app.run(debug=True)

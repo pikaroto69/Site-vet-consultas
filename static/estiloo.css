@@ -1,6 +1,8 @@
 *{
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
 }
 header{
     text-align: center;
@@ -19,7 +21,7 @@ header{
     padding: 10px;
     padding-left: 50px;
     padding-right: 50px;
-    margin: 10px;
+    margin: 0px;
     font-family:Arial, Helvetica, sans-serif;
 }
 .botcabecalho:hover{
@@ -31,62 +33,117 @@ header{
     width: 120px;
 }
 
-
-
-
-
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
-
- {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem 0;
+h1 {
+    margin-top: 20px;
+    background-color: #bebc2f;
+    color: black;
+    margin-left: 400px;
     text-align: center;
+    margin-right: 400px;
+    border-radius: 40px;
+    margin-bottom: 20px;
 }
 
- {
-    margin: 0;
+.div1{
+    display: flex;
+    background-color: #fdeb49;
+    padding: 5px;
+    border-radius: 30px;
 }
 
-section {
-    padding: 2rem;
-    margin: 1rem 0;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.img2 {
+    margin-top: 70px;
+    margin-left: 40px;
+    width: 400px;
+    height: 400px;
+    border-radius: 17px;
 }
 
-.about-us, .our-tools {
-    max-width: 800px;
+.p1{
+    margin-top: 35px;
+    margin-left: 20px;
+    padding: 10px;
+    background-color: #988d2a;
+    margin-bottom: 210px;
+    border-radius: 20px;
+}
+
+.h22 {
+    margin-top: 20px;
+    background-color: #bebc2f;
+    color: black;
+    margin-left: 400px;
+    text-align: center;
+    margin-right: 400px;
+    border-radius: 40px;
+    margin-bottom: 20px;
+    font-size: xx-large;
+}
+
+.div2 {
+    background-color: #fdeb49;
+    padding: 20px;
+}
+
+.div3{
+    background-color: #988d2a;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.p2 {
+    background-color: #988d2a;
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.img2 {
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.h23 {
+    margin-top: 20px;
+    background-color: #bebc2f;
+    color: black;
+    margin-left: 400px;
+    text-align: center;
+    margin-right: 400px;
+    border-radius: 40px;
+    margin-bottom: 20px;
+    font-size: xx-large;
+}
+
+.formulario {
+    align-items: center;
+    padding: 20px;
+    background-color: #bebc2f;
+    width: 143px;
+    display: block;
     margin: 0 auto;
+    border-radius: 20px;
 }
 
-h2 {
-    color: #333;
+.branco1 {
+    width: 135px;
 }
 
-h3 {
-    color: #555;
+.branco2 {
+    width: 135px;
 }
 
-p {
-    line-height: 1.6;
-    color: #666;
+.branco3 {
+    width: 135px;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-    width: 100%;
-    bottom: 0;
+.branco4 {
+    width: 135px;
+}
+
+label {
+    display: block;
 }
 
 footer {
@@ -113,9 +170,106 @@ a {
     text-decoration: none;
 }
 
-.titulo{
-    text-align: center;
+@media (min-width: 1025px) {
+    h1, .h22, .h23 {
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+    .botcabecalho {
+        padding-right: 50px;
+    }
 }
 
+@media (max-width: 1025px) {
+    .cabecalho {
+        flex-direction: column;
+    }
+    
+    h1, .h22, .h23 {
+        margin: 10px;
+        font-size: large;
+    }
+    
+    .div1 {
+        flex-direction: column;
+    }
+    
+    .p1 {
+        margin-bottom: 20px;
+    }
+}
 
+@media (max-width: 768px) {
+    .botcabecalho {
+        padding-left: 13px;
+        padding-right: 0px;
+    }
+    
+    .img2 {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 426px) {
+
+    .botcabecalho{
+        padding-left: 0px;
+        padding-right: 0px;
+        font-size: 8px;
+    }
+
+    .p1 {
+        font-size: small;
+    }
+    
+    .h22, .h23 {
+        font-size: large;
+    }
+    
+    .div2, .div3, .p2 {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 376px) {
+    .botcabecalho {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .div1 {
+        padding: 10px;
+    }
+
+    .img2{
+        width: 364px;
+    }
+}
+
+@media (max-width: 320px) {
+    .botcabecalho {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .h22, .h23 {
+        font-size: medium;
+    }
+
+    .img2{
+    width: 300px;
+    }
+    
+    .formulario {
+        width: 94%;
+        padding: 10px;
+    }
+    
+    .branco1, .branco2, .branco3, .branco4 {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
 
